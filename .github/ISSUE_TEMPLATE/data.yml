@@ -1,0 +1,47 @@
+name: 提交作息
+description: 匿名提交一份作息时间（不要写校名和个人信息）
+title: "[作息] "
+labels: ["data"]
+body:
+  - type: dropdown
+    id: stage
+    attributes:
+      label: 学段
+      options: [小学, 初中, 高中, 其他]
+    validations:
+      required: true
+  - type: input
+    id: region
+    attributes:
+      label: 省级行政区
+      placeholder: 例如 河北 / 河南 / 广东
+    validations:
+      required: true
+  - type: input
+    id: arrive
+    attributes:
+      label: 到校时间
+      placeholder: 例如 06:10
+    validations:
+      required: true
+  - type: input
+    id: leave
+    attributes:
+      label: 放学时间
+      placeholder: 例如 22:30
+    validations:
+      required: true
+  - type: dropdown
+    id: days
+    attributes:
+      label: 每周在校天数
+      options: ["5", "5.5", "6", "6.5", "7"]
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 我没有填写校名、姓名或任何可定位到个人的信息
+          required: true
