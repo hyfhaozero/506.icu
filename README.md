@@ -45,6 +45,25 @@
 
 代码与文档采用 [MIT](LICENSE)。数据部分不授予任何商业使用权。
 
+## 网站
+
+- 自定义域名：http://zero2one.de5.net/6107/
+- 默认地址：https://hyfhaozero.github.io/6107/
+
+## 评论区
+
+页面底部用 [utterances](https://utteranc.es) 挂 GitHub Issues 作为评论区。首次使用需要给仓库安装 utterances App：
+
+1. 打开 https://github.com/apps/utterances
+2. 点 Install，只勾选 `hyfhaozero/6107`
+3. 刷新页面即可
+
+## 维护者须知
+
+- 收到侵权或含个人信息的 issue / 评论，48 小时内处理（删除或屏蔽）
+- 不给任何投稿做置顶、编辑、推荐，保持"纯展示"
+- 不组织线下行动、不募捐
+
 ## 免责声明
 
 本项目不构成对任何具体学校的评价或指控，也不组织任何线下行动。如你认为某条内容侵犯了你的权益，请通过 issue 联系维护者，我们会在核实后 48 小时内处理。
