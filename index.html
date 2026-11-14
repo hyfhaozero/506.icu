@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>6107 — 早上 6:10 到校，晚上 10:30 放学</title>
-<meta name="description" content="6107 作息：早上 6:10 到校，晚上 10:30 放学，一周 7 天。记录学生作息时间，让数据说话。">
-<meta property="og:title" content="6107">
-<meta property="og:description" content="早上 6:10 到校，晚上 10:30 放学，一周 7 天。">
+<title>506 — 早上 5 点起床，晚上 10 点放学，一周 6 天</title>
+<meta name="description" content="506：早上 5 点起床，晚上 10 点放学，一周 6 天。这不是比苦大赛，只是把一个具体的作息样本记录下来，让数据说话。">
+<meta property="og:title" content="506">
+<meta property="og:description" content="早上 5 点起床，晚上 10 点放学，一周 6 天。">
 <meta property="og:image" content="assets/logo-512.png">
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
 <style>
@@ -32,6 +32,7 @@
   li { margin:6px 0; }
   .quote { border-left:3px solid var(--green); padding:4px 0 4px 16px; color:var(--muted); }
   .card { background:#111820; border:1px solid var(--line); border-radius:14px; padding:20px; }
+  .note { color:var(--red); font-weight:700; }
   .btn { display:inline-block; background:var(--green); color:#06210f; font-weight:700; text-decoration:none;
          padding:12px 22px; border-radius:10px; margin-top:8px; }
   footer { border-top:1px solid var(--line); margin-top:64px; padding:28px 0 56px; color:#61707f; font-size:13px; }
@@ -42,46 +43,56 @@
 <body>
 <div class="wrap">
   <header>
-    <img class="logo" src="assets/logo.svg" alt="6107 logo">
-    <h1>6107</h1>
-    <p class="tag">早上 <em>6:10</em> 到校，晚上 <em>22:30</em> 放学，一周 <em>7</em> 天。</p>
+    <img class="logo" src="assets/logo.svg" alt="506 logo">
+    <h1>506</h1>
+    <p class="tag">早上 <em>5</em> 点起床，晚上 <em>10</em> 点放学，一周 <em>6</em> 天。</p>
   </header>
 
   <div class="stats">
-    <div class="stat"><b>6:10</b><span>到校</span></div>
-    <div class="stat"><b>22:30</b><span>放学</span></div>
-    <div class="stat"><b>7</b><span>天 / 周</span></div>
+    <div class="stat"><b>5:00</b><span>起床</span></div>
+    <div class="stat"><b>22:00</b><span>放学</span></div>
+    <div class="stat"><b>6</b><span>天 / 周</span></div>
   </div>
 
   <section>
-    <h2>这是什么</h2>
-    <p>6107 是「6107 作息」的简称，指早上 6:10 到校、晚上 22:30 放学、每周七天都在学校的节奏。它比 996 更彻底——没有周末，也没有下班。</p>
-    <p>这里不列学校黑名单，也不组织任何行动。只做一件事：<strong>把作息时间记录下来，让数据说话。</strong></p>
+    <h2>506 是什么</h2>
+    <p>996 说的是程序员：早 9 点上班，晚 9 点下班，一周 6 天。506 说的是另一群人：早上 5 点起床，晚上 10 点放学，一周 6 天。</p>
+    <p>把两组数字摆在一起，少掉的是四个小时的睡眠。</p>
+    <p class="note">但 506 只是一个例子，不是一把尺子。</p>
+  </section>
+
+  <section>
+    <h2>苦难不该被比较</h2>
+    <div class="card">
+      <p>有的地方 5:30 起床，有的 6:10 到校；有的 10 点放学，有的 10:30 还在晚自习；有的一周 6 天，有的 7 天。</p>
+      <p>这个项目不排名，不评选"谁更惨"，也不打算证明"学生比上班族更累"。比较苦难有两个坏处：一是让每个人都不好意思先喊疼，二是把结构性的问题变成个人忍耐力的比赛。真要比，永远有人更早、更晚、更久，然后所有人一起闭嘴。</p>
+      <p>记录这些时间，不是为了分出高下，是为了让它们被看见，被统计，被讨论，最后被改变。</p>
+    </div>
   </section>
 
   <section>
     <h2>为什么用时间说事</h2>
     <div class="card">
       <p class="quote">教育部《关于进一步加强中小学生睡眠管理工作的通知》（2021）：小学生每天睡眠应达 10 小时，初中生 9 小时，高中生 8 小时；中学上午上课时间一般不早于 8:00。</p>
-      <p>把各地的到校时间放在一起，就能看出这条规定在多大范围内没有落地。数字比控诉更难反驳。</p>
+      <p>把各地的时间放在一起，就能看出这条规定在多大范围内没有落地。数字比控诉更难反驳。</p>
     </div>
   </section>
 
   <section>
     <h2>怎么参与</h2>
     <ul>
-      <li>在 Issues 里提交你的作息：学段、省级行政区、到校与放学时间、每周天数</li>
+      <li>在 Issues 里提交你的作息：学段、省级行政区、起床与放学时间、每周天数</li>
       <li><strong>不要写校名</strong>，不要写自己的名字、班级、任何能定位到个人的信息</li>
       <li>一条 issue 只写一份作息</li>
     </ul>
-    <a class="btn" href="https://github.com/hyfhaozero/6107/issues/new">提交我的作息</a>
+    <a class="btn" href="https://github.com/hyfhaozero/506.icu/issues/new">提交我的作息</a>
   </section>
 
   <section>
     <h2>讨论</h2>
     <div id="comments"></div>
     <script src="https://utteranc.es/client.js"
-            repo="hyfhaozero/6107"
+            repo="hyfhaozero/506.icu"
             issue-term="pathname"
             label="comment"
             theme="github-dark"
@@ -91,8 +102,8 @@
   </section>
 
   <footer>
-    <p>6107 不构成对任何具体学校的评价或指控。内容如涉侵权，请通过 issue 联系，核实后 48 小时内处理。</p>
-    <p>代码与文档采用 MIT 许可 · <a href="https://github.com/hyfhaozero/6107">GitHub</a></p>
+    <p>506 不构成对任何具体学校的评价或指控。内容如涉侵权，请通过 issue 联系，核实后 48 小时内处理。</p>
+    <p>代码与文档采用 MIT 许可 · <a href="https://github.com/hyfhaozero/506.icu">GitHub</a></p>
   </footer>
 </div>
 </body>
